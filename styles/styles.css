@@ -73,12 +73,19 @@ section {
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
-    border: 0;
+    border: 1px solid  var(--color-secondary);;
     border-radius: 8px;
     padding: 21px;
     margin: 0 auto;
     display: flex;
     margin-top: 32px;
+
+}
+.btn-primary:hover {
+    background-color: #FFFFFF;
+    color:  var(--color-secondary);
+    border: 1px solid  var(--color-secondary);
+    box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
 
 }
 
@@ -256,9 +263,17 @@ nav>ul {
     background-color: #FFFFFF;
     border: 1px solid var(--color-secondary);
     border-radius: 8px;
-    padding: 46px 37px 60px 36px;
-
+    padding: 46px 37px 60px 36px; 
+    transition:transform 0.5s;
 }
+.fact:hover {
+    box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+   
+    transform: rotate(360deg)  scale(1.4);
+    border: 3px solid var(--color-secondary);
+    
+  }
+
 
 .fact img {
     height: 45.22px;
